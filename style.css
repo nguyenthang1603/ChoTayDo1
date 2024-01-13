@@ -1,0 +1,157 @@
+/* styles.css */
+body {
+    background-color: #fffdd0; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Màu nền header */
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.market {
+    margin-right: 50px;
+    font-size: 24px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.vietnam-flag::before {
+    content: "\1F1FB\1F1F3"; /* Mã Unicode cho cờ Việt Nam */
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+/* Style cho cờ Việt Nam */
+.vietnam-flag {
+    font-family: Arial, sans-serif; /* Chọn font hỗ trợ Unicode */
+    font-weight: bold;
+    font-size: 36px;
+}
+
+section {
+    width: 100%;
+    margin: 80px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#basic-info {
+    background-color: #fffdd0; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#basic-info img {
+    margin-left: 70px;
+    margin-right: 70px;
+    width: 40%; /* Đảm bảo ảnh chiếm 48% chiều rộng của phần tử cha (#basic-info) */
+    margin-bottom: 10px; /* Khoảng cách giữa các ảnh */
+}
+
+#basic-info h2 {
+    font-size: 50px;
+    text-align: center;
+    width: 100%; /* Đảm bảo tiêu đề chiếm toàn bộ chiều rộng của phần tử cha (#basic-info) */
+}
+
+
+section img {
+    width: 100%; /* Kích thước hình ảnh bằng với chiều rộng của section */
+    height: auto; /* Đảm bảo tỉ lệ khung hình ảnh được duy trì */
+}
+
+
+section#services div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+section#services img {
+    margin-left: 150px;
+    width: 30%; /* Hình ảnh chiếm 50% chiều rộng của div cha */
+    height: 400px;
+    margin-right:20px;
+    margin-top: 40px;
+}
+
+#services h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.checked {
+    color: orange;
+  }
+
+  .star-wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    direction: rtl;
+  }
+  .star-wrapper a {
+    font-size: 4em;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+    margin: 4px;
+  }
+  .star-wrapper a:hover {
+    color: gold;
+    transform: scale(1.3);
+  }
+  .s1:hover ~ a {
+    color: gold;
+  }
+  .s2:hover ~ a {
+    color: gold;
+  }
+  .s3:hover ~ a {
+    color: gold;
+  }
+  .s4:hover ~ a {
+    color: gold;
+  }
+  .s5:hover ~ a {
+    color: gold;
+  }
+  .wraper {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+  }
+
+  .TQ {
+    margin-left: 60px;
+  }
+  p {
+    margin-left: 60px;
+    margin-right: 60px;}
